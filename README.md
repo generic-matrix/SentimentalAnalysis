@@ -9,6 +9,8 @@
 
 # Start the frontend services
 
+In the front end folder , run 
+
 1) ``` npm install ```
 
 2) In the App.js add the backend host url/ip
