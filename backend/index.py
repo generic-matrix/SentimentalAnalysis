@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from transformers import pipeline
 import json
 from flask_cors import CORS
+import base64
 
 
 
@@ -12,7 +13,7 @@ class SentimentalClassifier:
         if(len(text)>0):
           return self.pipeline(text)
         else:
-          return {}
+          return []
 
 
 app = Flask(__name__)
